@@ -20,7 +20,7 @@ num_array = number
 p num_array
 
 # 自分の名前、生年月日、血液型をハッシュで表して定義してみましょう。
-mune = {name: "munehiro nomura", date: "1991/12/12", bloodtype: "A"}
+mune = {name: "munehiro nomura", date: "1991/12/12".to_date, bloodtype: "A"}
 
 # 渡された文字列に「ruby」を足して返すメソッドを作成しましょう。
 def plus_ruby(name)
