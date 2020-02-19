@@ -4,13 +4,13 @@ end
 
 # 2.Peopleクラスに「Peopleのインスタンスが作られました」と出力するコンストラクタを定義してください。
 class People
-  def create
+  def initialize
     p "Peopleのインスタンスが作られました"
   end
 end
 
 people = People.new
-people.create
+
 
 # 3.Peopleクラスに「私はPeopleクラスです」と出力するクラスメソッドを定義してください。
 class People
@@ -38,10 +38,16 @@ class ChildPeople < People
 end
 
 # 6.ChildPeopleクラスに「私は目からビームが出せます」と出力するクラスメソッドを定義してください。
-class ChildPeople
-  def self.create
+class People
+  def create
+  end
+end
+
+class ChildPeople < People
+  def create
     p "私は目からビームが出せます"
   end
 end
 
-ChildPeople.create
+childPeople = ChildPeople.new
+childpeople.create
